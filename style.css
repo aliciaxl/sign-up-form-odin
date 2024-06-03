@@ -1,0 +1,161 @@
+
+
+body {
+    background-image: url("pinkbg.jpg");
+    background-size: cover;
+    margin: 0;
+}
+
+#webpage {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+
+#titlelogo { 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 440px;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 70px;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    background-color: rgb(0,0,0,.25);
+    margin-top: 40%;
+}
+
+img {
+    height: 90px;
+}
+
+#webform {
+    display: flex;
+    flex-direction: column;
+    background-color: #f3f4f6;
+    background-color: white;
+    font-family: "Wix Madefor Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#form_left {
+    margin-right: 50px;
+}
+
+#message {
+    display: flex;
+    flex-direction: column;
+    background-color: #f3f4f6;
+    padding: 115px 100px 30px 2em;
+    font-weight: 600;
+
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    font-weight: 600;
+    padding: 1em 4em 1.5em 2em; 
+}
+
+#label_message {
+    font-weight: 600;
+    margin-top: 1.5em;
+    margin-left: 2em;
+}
+
+#form_inputs {
+    padding-top: .5em;
+}
+
+label {
+    font-size: .6em;
+    font-weight: 100;
+    margin-top: 1.5em;
+    margin-bottom: .3em;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 175px;
+    border-style: none;
+    border: solid .5px;
+    border-color: #E5E7EB;
+    border-radius: 3px;
+
+}
+
+input:invalid {
+    border-color: red;
+}
+
+input:focus{
+    outline: none;
+    border-color: pink;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+#submit {
+    display: flex;
+    flex-direction: column;
+    background-color: #f3f4f6;
+    padding: 1.5em 100px 30px 35px;
+    flex-grow: 1;
+}
+
+button {
+    width: 150px;
+    background-color: #ed8d98;
+    color: white;
+    border-style: none;
+    border-color: #E5E7EB;
+    border-radius: 4px;
+    font-size: small;
+    font-weight: 600;
+    padding: .8em 1em;
+    margin-bottom: 1em;
+}
+
+button:hover {
+    box-shadow: 0px 0px 2px 2px #719ECE;
+}
+#login_alt {
+    font-size: .7em;
+}
+
+@media only screen and (max-width: 540px) {
+
+    #webpage {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+     #titlelogo {
+        width: 100vw;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        }
+    #form_inputs {
+            display:flex;
+            flex-direction: column;
+        }
+
+    }
